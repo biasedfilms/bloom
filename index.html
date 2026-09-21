@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#09090c" />
+  <meta name="description" content="Bloom — a procedural love letter made with HTML, CSS and JavaScript." />
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <link rel="shortcut icon" href="./favicon.svg" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Bloom</title>
+</head>
+
+<body>
+  <main class="app">
+    <canvas id="scene" role="img" aria-label="A procedural flower blooming from your word."></canvas>
+
+    <header class="hero-ui">
+      <a class="brand" href="./index.html" aria-label="Bloom home">BLOOM</a>
+      <h1>A word, in flower.</h1>
+
+      <form id="bloomForm" class="composer" autocomplete="off">
+        <label for="wordInput">what should bloom?</label>
+        <div class="input-row">
+          <span class="prompt-mark" aria-hidden="true">›</span>
+          <input id="wordInput" name="word" value="love" maxlength="28" inputmode="text" spellcheck="false"
+            autocomplete="off" aria-label="Word to bloom" />
+          <button class="submit-button" type="submit" aria-label="Bloom this word" title="Bloom this word">↵</button>
+        </div>
+        <div class="input-rule" aria-hidden="true"></div>
+      </form>
+    </header>
+
+    <footer class="footer-ui">
+      <span id="stateLabel" aria-live="polite">PRESS ENTER TO BLOOM</span>
+      <span class="footer-credit">Bloom <span aria-hidden="true">·</span> © 2026 Mikael Kalesaran</span>
+    </footer>
+
+    <div class="result-ui">
+      <div id="reveal" class="reveal" aria-live="polite"></div>
+      <button id="downloadButton" class="download-button" type="button" hidden aria-label="Download the Bloom artwork">
+        <span aria-hidden="true">↓</span> Download artwork
+      </button>
+    </div>
+    <div class="film-grain" aria-hidden="true"></div>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
