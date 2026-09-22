@@ -2,34 +2,30 @@
 
 A small interactive experience that turns a word into a procedural flower.
 
+<p align="center">
+  <a href="https://bloom-mikael.vercel.app">Open Bloom ↗</a>
+</p>
+
+---
+
 ## About
 
-Bloom uses a procedural Canvas 2D renderer to grow a flower from the word you enter. Press Enter to start a bloom, then download the finished result as a high-resolution artwork card.
+Bloom transforms the word you enter into a growing flower rendered entirely with Canvas 2D.
 
-## Tech
+Type a word, press **Enter**, and watch it bloom. Once the flower is finished, you can download the result as a high-resolution artwork card.
+
+## Built with
 
 - HTML
 - CSS
 - JavaScript
 - Canvas 2D
 
-## Run locally
+## Responsive by design
 
-There are no dependencies or build steps. Start a local server from the project directory:
+The layout is built for both desktop and mobile browsers. The flower adapts to the available visual space, while the renderer uses lighter workloads on mobile for smoother animation.
 
-```bash
-python3 -m http.server 5500
-```
-
-Then open [http://localhost:5500](http://localhost:5500).
-
-You can also open `index.html` with VS Code Live Server.
-
-## Responsive / performance notes
-
-The renderer is designed for both desktop and mobile browsers. The canvas uses the layout viewport to avoid Safari URL-bar and keyboard resize jumps, the flower scales to the available visual stage, and mobile rendering uses a lighter particle/petal workload.
-
-The bloom animation uses staggered petal timing, eased growth, subtle stem sway, ambient glow, and a restrained particle finish. The petal renderer avoids creating a new gradient for every petal on every frame.
+The bloom animation uses staggered petal timing, eased growth, subtle stem movement, ambient glow, and a restrained particle finish.
 
 ## License
 
@@ -37,4 +33,4 @@ MIT License
 
 ## Author
 
-Mikael Kalesaran
+**Mikael Kalesaran**
