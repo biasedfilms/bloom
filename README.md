@@ -2,7 +2,7 @@
 
 A small interactive experience that turns a word into a procedural flower.
 
-<p align="center">
+<p align="left">
   <a href="https://bloom-mikael.vercel.app">Open Bloom ↗</a>
 </p>
 
