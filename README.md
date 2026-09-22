@@ -25,6 +25,12 @@ Then open [http://localhost:5500](http://localhost:5500).
 
 You can also open `index.html` with VS Code Live Server.
 
+## Responsive / performance notes
+
+The renderer is designed for both desktop and mobile browsers. The canvas uses the layout viewport to avoid Safari URL-bar and keyboard resize jumps, the flower scales to the available visual stage, and mobile rendering uses a lighter particle/petal workload.
+
+The bloom animation uses staggered petal timing, eased growth, subtle stem sway, ambient glow, and a restrained particle finish. The petal renderer avoids creating a new gradient for every petal on every frame.
+
 ## License
 
 MIT License
